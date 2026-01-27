@@ -302,7 +302,7 @@ int SyncObject::poll(void)
 
         assert(in_sync == 1);
 
-        if (m_gen) {
+        if (eventvalid) {
             int incr;
 
             if (attributes & SyncObject::HasCount) {
